@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -25,6 +26,7 @@
             android:layout_weight="1"
             android:src="@drawable/btn"
             android:tint="@color/pink" />
+
         <ImageView
             android:id="@+id/btn_yellow"
             android:layout_width="0dp"
@@ -32,6 +34,7 @@
             android:layout_weight="1"
             android:src="@drawable/btn"
             android:tint="@color/yellow" />
+
         <ImageView
             android:id="@+id/btn_orange"
             android:layout_width="0dp"
@@ -39,6 +42,7 @@
             android:layout_weight="1"
             android:src="@drawable/btn"
             android:tint="@color/orange" />
+
         <ImageView
             android:id="@+id/btn_peach"
             android:layout_width="0dp"
@@ -60,8 +64,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/btn"
-            android:tint="@color/brown"/>
+            android:tint="@color/brown"
+            app:srcCompat="@drawable/btn" />
 
         <ImageView
             android:id="@+id/btn_light_green"
@@ -78,6 +82,7 @@
             android:layout_weight="1"
             android:tint="@color/deep_green"
             app:srcCompat="@drawable/btn" />
+
         <ImageView
             android:id="@+id/btn_sky_blue"
             android:layout_width="0dp"
@@ -85,6 +90,7 @@
             android:layout_weight="1"
             android:tint="@color/sky_blue"
             app:srcCompat="@drawable/btn" />
+
         <ImageView
             android:id="@+id/btn_deep_blue"
             android:layout_width="0dp"
@@ -92,6 +98,7 @@
             android:layout_weight="1"
             android:tint="@color/deep_blue"
             app:srcCompat="@drawable/btn" />
+
         <ImageView
             android:id="@+id/btn_violet"
             android:layout_width="0dp"
@@ -99,6 +106,7 @@
             android:layout_weight="1"
             android:tint="@color/violet"
             app:srcCompat="@drawable/btn" />
+
         <ImageView
             android:id="@+id/btn_black"
             android:layout_width="0dp"
@@ -128,7 +136,7 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout">
@@ -136,4 +144,92 @@
         <include layout="@layout/paint_view" />
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fab_tools"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/main_fab_bg"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_tools" />
+
+    <ImageView
+        android:id="@+id/fab_pencil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fab_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fab_tools"
+        app:layout_constraintEnd_toEndOf="@+id/fab_tools"
+        app:srcCompat="@drawable/ic_pencil" />
+
+    <ImageView
+        android:id="@+id/fab_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fab_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fab_pencil"
+        app:layout_constraintEnd_toEndOf="@+id/fab_pencil"
+        app:srcCompat="@drawable/ic_marker" />
+
+    <ImageView
+        android:id="@+id/fab_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fab_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fab_marker"
+        app:layout_constraintEnd_toEndOf="@+id/fab_marker"
+        app:srcCompat="@drawable/ic_brush" />
+
+    <ImageView
+        android:id="@+id/canvas_color_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/main_fab_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_tools"
+        app:layout_constraintEnd_toStartOf="@+id/fab_tools"
+        app:layout_constraintTop_toTopOf="@+id/fab_tools"
+        app:srcCompat="@drawable/ic_white_canvas" />
+
+    <ImageView
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/fab_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas_color_change"
+        app:layout_constraintEnd_toStartOf="@+id/canvas_color_change"
+        app:layout_constraintTop_toTopOf="@+id/canvas_color_change"
+        app:srcCompat="@drawable/ic_share" />
+
+    <ImageView
+        android:id="@+id/btn_save_canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/fab_bg"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_share"
+        app:layout_constraintEnd_toStartOf="@+id/btn_share"
+        app:layout_constraintTop_toTopOf="@+id/btn_share"
+        app:srcCompat="@drawable/ic_save" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
