@@ -27,14 +27,15 @@ You can download iPaint for Kids directly from the Google Play Store:
 ## Screenshots
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/95829b91-141f-4093-bbf6-73ac5046bfd9" alt="Screenshot 1" width="150" />
+  <img src="https://github.com/user-attachments/assets/6308ff07-a0fa-4151-aafa-67df356212d3" alt="Screenshot 1" width="150" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/dacc4f89-6e82-4b65-adc2-9495a6026078" alt="Screenshot 2" width="150" />
+  <img src="https://github.com/user-attachments/assets/1d77abc0-7a99-4d33-aa0b-7ac62435cc1d" alt="Screenshot 2" width="150" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/85ec930c-4046-47f3-b69e-bb8d178b6340" alt="Screenshot 3" width="150" />
+  <img src="https://github.com/user-attachments/assets/206b6ea0-60e3-45b8-abf1-e0083de5bfa5" alt="Screenshot 3" width="150" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/79c692fd-d3b2-4305-8f18-f13f14c37265" alt="Screenshot 4" width="150" />
+  <img src="https://github.com/user-attachments/assets/cc1c5543-cd99-49ad-a158-9381e7fe8f44" alt="Screenshot 4" width="150" />
 </p>
+
 
 
 
